@@ -8,7 +8,7 @@ void displayMenu();
 void printStatus(int status);
 
 int main() {
-    int grid[5][5] = {0}; // 5x5 grid initialized with all 0s (OFF, Normal, No maintenance)
+    int grid[5][5] = {0}; // 5x5 grid initialized with all 0
     int choice;
     int rows = 5, cols = 5;
 
@@ -52,9 +52,9 @@ void updateSectorStatus(int grid[5][5], int rows, int cols) {
     int row, col, flagChoice, action;
 
     // Bit positions
-    int POWER_ON = 1;       // Bit 0 (binary 001)
-    int OVERLOAD = 2;       // Bit 1 (binary 010)
-    int MAINTENANCE = 4;    // Bit 2 (binary 100)
+    int POWER_ON = 1;       // binary 001
+    int OVERLOAD = 2;       // binary 010
+    int MAINTENANCE = 4;    // binary 100
 
     printf("Enter row (0-%d): ", rows - 1);
     scanf("%d", &row);
@@ -130,7 +130,6 @@ void printStatus(int status) {
     printf("Maintenance Required: %s\n", (status & MAINTENANCE) ? "YES" : "NO");
 }
 
-// -----------------------------------------------------------
 // run diagnostic on the entire grid
 void runSystemDiagnostic(int grid[5][5], int rows, int cols) {
     int OVERLOAD = 2;
@@ -150,3 +149,4 @@ void runSystemDiagnostic(int grid[5][5], int rows, int cols) {
     printf("Total overloaded sectors: %d\n", overloadedCount);
     printf("Total sectors needing maintenance: %d\n", maintenanceCount);
 }
+
