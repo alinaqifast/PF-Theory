@@ -1,3 +1,9 @@
+// ALI NAQI KHOSO
+// 25K-0989
+// PF Theory Assignment 2
+// Question 4
+
+
 #include <stdio.h>
 
 #define MAX 5   // maximum size of stack
@@ -97,4 +103,5 @@ void display(int stack[], int top) {
         printf("%d\n", stack[i]);
     }
 }
+
 
