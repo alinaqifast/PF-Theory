@@ -1,3 +1,9 @@
+// ALI NAQI KHOSO
+// 25K-0989
+// PF Theory Assignment 2
+// Question 3
+
+
 #include <stdio.h>
 
 // Function prototype
@@ -149,4 +155,5 @@ void runSystemDiagnostic(int grid[5][5], int rows, int cols) {
     printf("Total overloaded sectors: %d\n", overloadedCount);
     printf("Total sectors needing maintenance: %d\n", maintenanceCount);
 }
+
 
