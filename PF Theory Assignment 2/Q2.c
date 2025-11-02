@@ -1,3 +1,9 @@
+// ALI NAQI KHOSO
+// 25K-0989
+// PF Theory Assignment 2
+// Question 1
+
+
 #include <stdio.h>
 #include <string.h>
 
@@ -157,3 +163,4 @@ void showInvoice(char name[], char cnic[], int codes[], int prices[], int cart[]
 
     printf("Total Amount: %d\n", total);
 }
+
