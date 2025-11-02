@@ -1,3 +1,9 @@
+// ALI NAQI KHOSO
+// 25K-0989
+// PF Theory Assignment 2
+// Question 5
+
+
 #include <stdio.h>
 #include <string.h>
 
@@ -92,3 +98,4 @@ void decodeMessage(char message[]) {
 
     printf("\nDecoded Message: %s\n", message);
 }
+
