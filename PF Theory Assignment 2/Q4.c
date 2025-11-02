@@ -10,7 +10,7 @@ void display(int stack[], int top);
 
 int main() {
     int stack[MAX];
-    int top = -1;  // stack initially empty
+    int top = -1; 
     int choice;
 
     while (1) {
@@ -47,7 +47,7 @@ int main() {
 
 // ===================== FUNCTION DEFINITIONS =====================
 
-// PUSH function: adds an element to the top of the stack
+// PUSH function
 void push(int stack[], int *top) {
     if (*top == MAX - 1) {
         printf("Stack Overflow! Cannot push more elements.\n");
@@ -63,7 +63,7 @@ void push(int stack[], int *top) {
     printf("%d pushed to stack.\n", value);
 }
 
-// POP function: removes the top element
+// POP function
 void pop(int stack[], int *top) {
     if (*top == -1) {
         printf("Stack Underflow! No elements to pop.\n");
@@ -75,7 +75,7 @@ void pop(int stack[], int *top) {
     printf("Popped element: %d\n", value);
 }
 
-// PEEK function: displays the top element without removing it
+// PEEK function
 void peek(int stack[], int top) {
     if (top == -1) {
         printf("Stack is empty.\n");
@@ -85,7 +85,7 @@ void peek(int stack[], int top) {
     printf("Top element: %d\n", stack[top]);
 }
 
-// DISPLAY function: shows all elements in the stack
+// DISPLAY function
 void display(int stack[], int top) {
     if (top == -1) {
         printf("Stack is empty.\n");
@@ -97,3 +97,4 @@ void display(int stack[], int top) {
         printf("%d\n", stack[i]);
     }
 }
+
